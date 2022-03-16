@@ -1,0 +1,11 @@
+bases:
+- ../../base
+images:
+- name: dummy 
+  newName: ${image}
+  newTag: ${imageTag}
+nameSuffix: -blue
+commonLabels:
+  app: nodejs-blue
+patchesStrategicMerge:
+- patch.yaml
